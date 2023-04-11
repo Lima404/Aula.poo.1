@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+void main(){
+  MaterialApp app = MaterialApp(
+    theme: ThemeData(
+      primarySwatch: Colors.grey
+    ),
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Relou Uordi"),
+      ),
+      body: Center(
+        child: Column(
+          children:[
+            Text("Viva Santana"),
+            Text("Cerveja é melhor que cachaça"),
+            Text("Aoba"),
+          ]
+        ),
+      ),
+      bottomNavigationBar: Text("Botão"),
+    )
+  );
+  runApp(app);
+}
