@@ -20,21 +20,23 @@ class MyApp extends StatelessWidget {
               children: [
                 const DrawerHeader(
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.yellow,
                   ),
                   child: Text('Title'),
                 ),
-                ListTile(
-                  title: const Text('Type one'),
-                  onTap: () {
-                    // Update the state of the app.
-                    // ...
-                  },
-                ),
-                ListTile(
-                  title: const Text('Type two'),
-                  onTap: () {
-                  },
+                Container(
+                    color: Colors.purple, // Define a cor de fundo personalizada
+                    child: ListTile(
+                      title: Text('Opção 2'),
+                      onTap: () {},
+                    ),
+                  ),
+                Container(
+                  color: Colors.purple, // Define a cor de fundo personalizada
+                  child: ListTile(
+                    title: Text('Opção 2'),
+                    onTap: () {},
+                  ),
                 ),
               ],
             ),
